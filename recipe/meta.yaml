@@ -1,6 +1,6 @@
 {% set name = "saga-python" %}
-{% set version = "0.50.0" %}
-{% set sha256 = "db6ca73adb897e0907cfee3ce85a853e97327ba40e3ecab81c6bd0f1a44aa053" %}
+{% set version = "0.50.1" %}
+{% set sha256 = "64c0582768237eca816de4b3dbe22c67b9f8a88b11d345f496ea444a10b1235d" %}
 
 package:
   name: {{ name|lower }}
