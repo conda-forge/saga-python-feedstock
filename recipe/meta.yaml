@@ -1,6 +1,6 @@
 {% set name = "saga-python" %}
-{% set version = "0.50.5" %}
-{% set sha256 = "f1ecd55e395e0d80f2ae67117f9b288ba890eff965de7583f086e286a3e1690e" %}
+{% set version = "0.60.1" %}
+{% set sha256 = "75eb09a5c03e09a3020bfcc15393761b8d9f67599b26f114b1fa14db82e789a2" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python -m pip install --no-deps --ignore-installed  .
   skip: True  # [py3k or win]
 
