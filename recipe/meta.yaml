@@ -1,6 +1,6 @@
 {% set name = "saga-python" %}
-{% set version = "0.50.0" %}
-{% set sha256 = "db6ca73adb897e0907cfee3ce85a853e97327ba40e3ecab81c6bd0f1a44aa053" %}
+{% set version = "0.60.1" %}
+{% set sha256 = "75eb09a5c03e09a3020bfcc15393761b8d9f67599b26f114b1fa14db82e789a2" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: True  # [py3k or win]
 
@@ -21,9 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - apache-libcloud
-    - parse
-    - radical.utils
+    - radical.saga
     
 test:
   imports:
@@ -41,7 +39,7 @@ about:
     distributed infrastructure, SAGA provides a much needed interoperability layer that lowers the 
     complexity and improves the simplicity of using distributed infrastructure whilst enhancing 
     the sustainability of distributed applications, services and tools. 
-  dev_url: https://github.com/radical-cybertools/saga-python
+  dev_url: https://github.com/radical-cybertools/radical.saga
 
 extra:
   recipe-maintainers:
